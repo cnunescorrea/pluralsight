@@ -1,3 +1,5 @@
+package com.cnunescorrea;
+
 public class ReturnMethod {
 
     public static void main(String[] args) {

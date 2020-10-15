@@ -1,3 +1,5 @@
+package com.cnunescorrea;
+
 public class StringReverser {
 
     public String reverse (String s) {

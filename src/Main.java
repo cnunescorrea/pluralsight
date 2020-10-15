@@ -1,13 +1,36 @@
+import javax.swing.*;
+import java.awt.*;
+
 public class Main {
 
-    public static void main(String[] args) {
-	    System.out.println("First line from app");
-	    System.out.println("Second line from app");
-	    System.out.println("Third line from app");
-
-	    String value = "pluralsight";
-	    StringReverser reverser = new StringReverser();  // Inst Classe
-		String reverseString =  reverser.reverse(value); // execute method
-		System.out.println(reverseString);
+    public static void main(String... args) {
+        JFrame application = createGUI();
+        application.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        application.setVisible(true);
     }
+
+    private static JFrame createGUI() {
+        JTextField input = new JTextField();
+        input.setPreferredSize(new Dimension(300, 40));
+
+        JButton convertButton = new JButton("Convert");
+
+        JLabel output = new JLabel();
+        output.setPreferredSize(new Dimension(300, 40));
+
+        convertButton.addActionListener(event -> {
+            output.setText(TitlecaseConverter.convertToTitleCase(input.getText()));
+        });
+
+        JFrame gui = new JFrame("Title case converter");
+        gui.setLayout(new FlowLayout());
+        gui.add(input);
+        gui.add(convertButton);
+        gui.add(output);
+        gui.pack();
+        gui.setLocationRelativeTo(null); // Centering the screen
+
+        return gui;
+    }
+
 }

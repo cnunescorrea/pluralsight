@@ -1,3 +1,5 @@
+package com.cnunescorrea;
+
 public class Array {
 
     public static void main(String[] args) {
