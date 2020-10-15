@@ -1,0 +1,4 @@
+JRE, JDK, IDE
+
+JRE - Java Runtime Environment Enables Java Code execution
+JDK -
