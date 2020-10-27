@@ -1,4 +1,4 @@
-package com.cnunescorrea;
+package com.cnunes.stringreverser;
 
 public class StringReverser {
 

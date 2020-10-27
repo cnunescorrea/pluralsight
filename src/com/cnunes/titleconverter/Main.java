@@ -1,3 +1,7 @@
+package com.cnunes.titleconverter;
+
+import com.cnunes.titleconverter.TitlecaseConverter;
+
 import javax.swing.*;
 import java.awt.*;
 

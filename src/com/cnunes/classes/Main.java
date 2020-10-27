@@ -1,10 +1,11 @@
-package com.cnunescorrea;
+package com.cnunes.classes;
+
+import com.cnunes.classes.MathEquation;
 
 public class Main {
 
     public static void main(String[] args) {
         performCalculations();
-
     }
 
     static void performCalculations() {
@@ -14,21 +15,18 @@ public class Main {
         equations[2] = create(225.0d, 17.0d, 's');
         equations[3] = create(11.0d, 3.0d, 'm');
 
-        for (MathEquation equation : equations) {
-        equation.execute();
-        System.out.println("result = " +equation.result);
+        for(MathEquation equation : equations) {
+            equation.execute();
+            System.out.println("result = " + equation.getResult());
         }
 
     }
 
     private static MathEquation create(double leftVal, double rightVal, char opCode) {
         MathEquation equation = new MathEquation();
-        equation.leftVal = leftVal;
-        equation.rightVal = rightVal;
-        equation.opCode = opCode;
+        equation.setLeftVal(leftVal);
+        equation.setRightVal(rightVal);
+        equation.setOpCode(opCode);
         return equation;
     }
-
-
-
 }

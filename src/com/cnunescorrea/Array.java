@@ -1,5 +1,7 @@
 package com.cnunescorrea;
 
+import java.util.Arrays;
+
 public class Array {
 
     public static void main(String[] args) {
@@ -21,8 +23,8 @@ public class Array {
                     results[i] = leftVals[i] * rightVals[i];
                     break;
                 case 'd':
-                    results[i] = leftVals[i] / rightVals[i];
-                   // results[i] = rightVals[i] != 0 ? leftVals[i] / rightVals[i] : 0.0d;
+                 results[i] = leftVals[i] / rightVals[i];
+                    results[i] = rightVals[i] != 0 ? leftVals[i] / rightVals[i] : 0.0d;
                     break;
                 default:
                     System.out.println("Invalid opCode:" + opCodes[i]);
@@ -30,6 +32,6 @@ public class Array {
                     break;
             }
         }
-        System.out.println(results);
+        System.out.println(Arrays.toString(results));
     }
 }
