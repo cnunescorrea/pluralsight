@@ -1,7 +1,5 @@
 package com.cnunes.classes;
 
-import com.cnunes.classes.MathEquation;
-
 public class Main {
 
     public static void main(String[] args) {
